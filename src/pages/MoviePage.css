@@ -1,0 +1,22 @@
+.movie__info {
+  display: flex;
+  margin: 30px;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+.movie__img {
+  object-fit: contain;
+  height: 350px;
+  flex: 1;
+}
+.movie__desc {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+.movie__poster {
+  height: 200px;
+  object-fit: contain;
+}
