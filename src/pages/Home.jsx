@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+
 import Banner from '../components/Banner';
 import Navbar from '../components/Navbar';
 import Row from "../components/Row"
@@ -9,7 +9,6 @@ const Home = () => {
         <div>
            <Navbar/>
       <Banner/>
-      <Link to="/movie/123" state={{hi:"hi"}}>hello </Link>
       <Row title="netflix originals" fetchUrl={requests.fetchNetflixOriginals} isLarge={true}/>
       <Row title="trending now" fetchUrl={requests.fetchTrending}/>
       <Row title="toprated" fetchUrl={requests.fetchTopRated}/>

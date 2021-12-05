@@ -3,13 +3,13 @@ import axios from "../axios"
 import Youtube from 'react-youtube'
 import movieTrailer from "movie-trailer"
 import "./Row.css"
-import { Link } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 const base_url="https://image.tmdb.org/t/p/original"
 
 const Row = ({title,fetchUrl,isLarge}) => {
     const [movies,setMovies]=useState([])
     const [trailerId,setTrailerId]=useState("")
-    
+    let navigate = useNavigate();
     useEffect(()=>{
         const getMovies=async()=>{
            const res =await axios.get(fetchUrl);
@@ -29,6 +29,7 @@ const Row = ({title,fetchUrl,isLarge}) => {
     }
 
     const handleClick=(movie)=>{
+        navigate("/movie/123",{state:movie})
         if(trailerId){
             setTrailerId("")
         }

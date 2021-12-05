@@ -58,3 +58,9 @@
 /* .signin__title {
   text-align: center;
 } */
+
+@media screen and (max-width: 480px) {
+  .signin__formContainer {
+    width: 250px;
+  }
+}

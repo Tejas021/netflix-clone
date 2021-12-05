@@ -4,19 +4,54 @@
   border: 1.5px solid white;
   border-radius: 5px;
   padding: 40px;
+  flex-wrap: wrap;
 }
 
 .movie__img {
   object-fit: contain;
-  height: 350px;
-  flex: 1;
+  width: 50%;
 }
 .movie__desc {
   display: flex;
-  padding: 20px;
+
   flex-direction: column;
+  width: 50%;
 }
 .movie__poster {
   height: 200px;
   object-fit: contain;
+}
+
+.movie__infoTitle {
+  font-size: 400%;
+  margin-bottom: 30px;
+  padding: 20px 0px 0px 20px;
+}
+.movie__infoDesc {
+  width: 100%;
+  padding: 20px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 480px) {
+  .movie__info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .movie__img {
+    width: 100%;
+  }
+  .movie__desc {
+    width: 100%;
+  }
+  .movie__infoTitle {
+    font-size: 200%;
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+  .movie__infoDesc {
+    padding: 0px;
+  }
 }
