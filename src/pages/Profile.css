@@ -1,0 +1,109 @@
+.profile__screen {
+  height: 100vh;
+  color: white;
+}
+
+.profile__container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  padding-top: 8%;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.profile__container > h1 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.profile__body {
+  display: flex;
+
+  justify-content: space-around;
+}
+.profile__body > img {
+  height: 100px;
+  flex: 1;
+  object-position: contain;
+}
+
+.profile__info {
+  padding-left: 20px;
+  flex: 5;
+}
+
+.profile__info > button {
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 130%;
+}
+
+.profile__info > h1 {
+  background-color: grey;
+  padding-left: 20px;
+  font-size: 15px;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.plans__title {
+  font-weight: 400;
+  font-size: 120%;
+  margin: 20px 0px;
+}
+
+.plan__card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.plan__card > button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: red;
+  color: white;
+
+  text-transform: uppercase;
+  font-size: 70%;
+}
+
+@media screen and (max-width: 480px) {
+  .profile__container > h1 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  .profile__container {
+    padding-top: 38%;
+  }
+  .profile__info > h1 {
+    background-color: grey;
+    padding-left: 20px;
+    font-size: 10px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .profile__info > button {
+    font-size: 100%;
+  }
+  .plan__card > p {
+    font-size: 70%;
+  }
+}
